@@ -1,0 +1,6 @@
+interface:
+  display_name: "小愈回信"
+  short_description: "写出具体、克制、有真人感的中文树洞回信"
+  default_prompt: "Use $positive-regard-reply to draft a direct, human, and grounded Chinese reply to this letter."
+policy:
+  allow_implicit_invocation: true
