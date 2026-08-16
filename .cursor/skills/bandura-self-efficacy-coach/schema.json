@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BanduraReplyPlan",
+  "description": "班杜拉自我效能教练的内部评估与回复规格。先填计划，再生成用户可见回复。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "user_utterance",
+    "task",
+    "low_efficacy_belief",
+    "unhelpful_attribution",
+    "controllable_attribution",
+    "efficacy_reframe",
+    "vicarious_model",
+    "micro_step",
+    "reply"
+  ],
+  "properties": {
+    "user_utterance": {
+      "type": "string",
+      "description": "用户原话"
+    },
+    "task": {
+      "type": "string",
+      "description": "用户卡住的具体任务或情境，领域特异，禁止写成一般人生问题"
+    },
+    "low_efficacy_belief": {
+      "type": "string",
+      "description": "用户当前的低效能判断，尽量保留其原词，例如‘我做不到写完开题’"
+    },
+    "unhelpful_attribution": {
+      "type": "string",
+      "description": "用户的消极归因，例如‘我天生意志力差’"
+    },
+    "controllable_attribution": {
+      "type": "string",
+      "description": "改写后的可控归因，指向目标过大、路径缺失或缺少榜样"
+    },
+    "efficacy_reframe": {
+      "type": "string",
+      "description": "效能重构句，核心是‘你不是不行，只是缺乏一套行之有效的路径’"
+    },
+    "vicarious_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["similar_other", "first_steps", "why_similar"],
+      "properties": {
+        "similar_other": {
+          "type": "string",
+          "description": "起点相似的他人，不要用遥不可及的成功名人"
+        },
+        "first_steps": {
+          "type": "string",
+          "description": "此人如何迈出前一两步，而不是完整逆袭故事"
+        },
+        "why_similar": {
+          "type": "string",
+          "description": "与用户在任务、难度或卡点上的相似处"
+        }
+      }
+    },
+    "micro_step": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["action", "duration_minutes", "done_when", "mastery_signal"],
+      "properties": {
+        "action": {
+          "type": "string",
+          "description": "一个极其微小、可独立完成的行动"
+        },
+        "duration_minutes": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 20
+        },
+        "done_when": {
+          "type": "string",
+          "description": "完成标准，必须可观察"
+        },
+        "mastery_signal": {
+          "type": "string",
+          "description": "完成后用户可以对自己说的‘我做到了’证据"
+        }
+      }
+    },
+    "arousal_note": {
+      "type": ["string", "null"],
+      "description": "若用户提到紧张、心跳、焦虑，将其标为行动动员信号；不要否定焦虑本身"
+    },
+    "risk_flag": {
+      "type": "string",
+      "enum": ["none", "self_harm", "violence", "immediate_danger"],
+      "default": "none"
+    },
+    "reply": {
+      "type": "string",
+      "description": "给用户看的完整中文回复。人设为正义赋能者：热血直爽，须覆盖效能重构、归因、榜样、微步骤；打气与拆解同一回合出现"
+    }
+  }
+}

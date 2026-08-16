@@ -1,0 +1,483 @@
+[
+  {
+    "file": "bandura_1978_reciprocal_determinism.pdf",
+    "status": "ok",
+    "chunks": 238,
+    "author": "Albert Bandura",
+    "school": "社会认知理论",
+    "core_concepts": [
+      "三元交互",
+      "相互决定论",
+      "自我系统",
+      "自我调节",
+      "self-efficacy",
+      "vicarious experience",
+      "reciprocal determinism"
+    ],
+    "body_chars": 104038
+  },
+  {
+    "file": "bandura_1982_mechanism_agency.pdf",
+    "status": "ok",
+    "chunks": 398,
+    "author": "Albert Bandura",
+    "school": "社会认知理论",
+    "core_concepts": [
+      "人类能动性",
+      "自我效能",
+      "集体效能",
+      "代理控制",
+      "self-efficacy",
+      "mastery experience",
+      "performance accomplishments",
+      "vicarious experience",
+      "verbal persuasion",
+      "physiological states",
+      "participant modeling",
+      "proximal goal",
+      "human agency"
+    ],
+    "body_chars": 174546
+  },
+  {
+    "file": "bandura_2001_agentic_perspective.pdf",
+    "status": "ok",
+    "chunks": 290,
+    "author": "Albert Bandura",
+    "school": "社会认知理论",
+    "core_concepts": [
+      "人类能动性",
+      "自我效能",
+      "集体效能",
+      "意向性",
+      "预见",
+      "performance accomplishments",
+      "moral disengagement",
+      "human agency"
+    ],
+    "body_chars": 129357
+  },
+  {
+    "file": "bandura_four_sources.md",
+    "status": "ok",
+    "chunks": 1,
+    "author": "Albert Bandura",
+    "school": "自我效能",
+    "core_concepts": [
+      "掌握经验",
+      "替代经验",
+      "社会劝说",
+      "生理状态",
+      "效能预期",
+      "亲身掌握",
+      "表现成就",
+      "言语劝说",
+      "情绪状态"
+    ],
+    "body_chars": 287
+  },
+  {
+    "file": "bandura_human_agency.md",
+    "status": "ok",
+    "chunks": 1,
+    "author": "Albert Bandura",
+    "school": "社会认知理论",
+    "core_concepts": [
+      "人类能动性",
+      "自我效能",
+      "目标",
+      "三元交互"
+    ],
+    "body_chars": 187
+  },
+  {
+    "file": "bandura_mastery_proximal.md",
+    "status": "ok",
+    "chunks": 1,
+    "author": "Albert Bandura",
+    "school": "目标与自我调节",
+    "core_concepts": [
+      "掌握经验",
+      "引导掌握",
+      "参与示范",
+      "近端目标",
+      "亲身掌握",
+      "替代经验",
+      "远端目标"
+    ],
+    "body_chars": 361
+  },
+  {
+    "file": "bandura_moral_disengagement.md",
+    "status": "ok",
+    "chunks": 1,
+    "author": "Albert Bandura",
+    "school": "道德疏离",
+    "core_concepts": [
+      "道德疏离",
+      "道德自我调节",
+      "责任分散"
+    ],
+    "body_chars": 270
+  },
+  {
+    "file": "bandura_observational_learning.md",
+    "status": "ok",
+    "chunks": 1,
+    "author": "Albert Bandura",
+    "school": "观察学习",
+    "core_concepts": [
+      "观察学习",
+      "示范",
+      "注意",
+      "保持",
+      "动作复现",
+      "动机",
+      "替代经验"
+    ],
+    "body_chars": 280
+  },
+  {
+    "file": "bandura_persuasion_attribution.md",
+    "status": "ok",
+    "chunks": 1,
+    "author": "Albert Bandura",
+    "school": "自我效能",
+    "core_concepts": [
+      "社会劝说",
+      "言语劝说",
+      "归因反馈",
+      "认知加工",
+      "结果预期"
+    ],
+    "body_chars": 353
+  },
+  {
+    "file": "bandura_physiological_affect.md",
+    "status": "ok",
+    "chunks": 1,
+    "author": "Albert Bandura",
+    "school": "自我效能",
+    "core_concepts": [
+      "生理状态",
+      "情绪状态",
+      "恐惧唤醒",
+      "应对效能",
+      "表现成就",
+      "参与示范"
+    ],
+    "body_chars": 302
+  },
+  {
+    "file": "bandura_reciprocal_determinism.md",
+    "status": "ok",
+    "chunks": 1,
+    "author": "Albert Bandura",
+    "school": "社会认知理论",
+    "core_concepts": [
+      "三元交互",
+      "相互决定论",
+      "环境",
+      "行为",
+      "个人因素",
+      "自我效能"
+    ],
+    "body_chars": 293
+  },
+  {
+    "file": "bandura_self_efficacy_unifying.md",
+    "status": "ok",
+    "chunks": 1,
+    "author": "Albert Bandura",
+    "school": "自我效能",
+    "core_concepts": [
+      "自我效能",
+      "效能预期",
+      "结果预期",
+      "行为改变",
+      "掌握经验"
+    ],
+    "body_chars": 375
+  },
+  {
+    "file": "bandura_vicarious_peer_models.md",
+    "status": "ok",
+    "chunks": 1,
+    "author": "Albert Bandura",
+    "school": "观察学习",
+    "core_concepts": [
+      "替代经验",
+      "观察学习",
+      "应对榜样",
+      "同伴榜样",
+      "亲身掌握",
+      "参与示范",
+      "掌握榜样"
+    ],
+    "body_chars": 291
+  },
+  {
+    "file": "artino_2012_academic_self_efficacy.pdf",
+    "status": "ok",
+    "chunks": 108,
+    "author": "Anthony R. Artino Jr.",
+    "school": "自我效能",
+    "core_concepts": [
+      "自我效能",
+      "掌握经验",
+      "替代经验",
+      "社会劝说",
+      "生理状态",
+      "mastery experience",
+      "vicarious experience",
+      "social persuasion",
+      "verbal persuasion",
+      "proximal goal",
+      "peer model"
+    ],
+    "body_chars": 47189
+  },
+  {
+    "file": "ashford_2010_change_self_efficacy.pdf",
+    "status": "ok",
+    "chunks": 129,
+    "author": "Stefanie Ashford",
+    "school": "干预与测量",
+    "core_concepts": [
+      "自我效能",
+      "掌握经验",
+      "替代经验",
+      "社会劝说",
+      "分级掌握",
+      "self-efficacy",
+      "mastery experience",
+      "vicarious experience",
+      "verbal persuasion"
+    ],
+    "body_chars": 57913
+  },
+  {
+    "file": "egele_2025_sources_ranking.pdf",
+    "status": "ok",
+    "chunks": 183,
+    "author": "Viktoria S. Egele",
+    "school": "干预与测量",
+    "core_concepts": [
+      "掌握经验",
+      "替代经验",
+      "社会劝说",
+      "生理状态",
+      "自我效能",
+      "self-efficacy",
+      "mastery experience",
+      "vicarious experience",
+      "social persuasion",
+      "verbal persuasion"
+    ],
+    "body_chars": 82119
+  },
+  {
+    "file": "panadero_2017_srl_review.pdf",
+    "status": "ok",
+    "chunks": 373,
+    "author": "Ernesto Panadero",
+    "school": "目标与自我调节",
+    "core_concepts": [
+      "自我调节",
+      "自我效能",
+      "社会认知理论",
+      "目标",
+      "self-regulated learning",
+      "self-regulation",
+      "metacognition",
+      "socially shared regulated learning",
+      "shared"
+    ],
+    "body_chars": 167616
+  },
+  {
+    "file": "schunk_1982_goal_proximity.pdf",
+    "status": "ok",
+    "chunks": 135,
+    "author": "Dale H. Schunk",
+    "school": "自我效能",
+    "core_concepts": [
+      "自我效能",
+      "近端目标",
+      "归因反馈",
+      "掌握经验",
+      "self-efficacy",
+      "vicarious experience",
+      "social persuasion",
+      "proximal goal"
+    ],
+    "body_chars": 60037
+  },
+  {
+    "file": "schunk_1982_social_comparison_goals.pdf",
+    "status": "ok",
+    "chunks": 79,
+    "author": "Dale H. Schunk",
+    "school": "目标与自我调节",
+    "core_concepts": [
+      "近端目标",
+      "社会比较",
+      "自我效能",
+      "同伴榜样",
+      "self-efficacy",
+      "proximal goal"
+    ],
+    "body_chars": 33064
+  },
+  {
+    "file": "schunk_1983_rewards_goals.pdf",
+    "status": "ok",
+    "chunks": 91,
+    "author": "Dale H. Schunk",
+    "school": "目标与自我调节",
+    "core_concepts": [
+      "近端目标",
+      "自我效能",
+      "掌握经验",
+      "self-efficacy",
+      "proximal goal"
+    ],
+    "body_chars": 40929
+  },
+  {
+    "file": "schunk_1987_self_efficacy_review.pdf",
+    "status": "ok",
+    "chunks": 131,
+    "author": "Dale H. Schunk",
+    "school": "自我效能",
+    "core_concepts": [
+      "自我效能",
+      "掌握经验",
+      "替代经验",
+      "归因反馈",
+      "self-efficacy",
+      "vicarious experience",
+      "proximal goal",
+      "coping model",
+      "peer model"
+    ],
+    "body_chars": 61390
+  },
+  {
+    "file": "schunk_1988_self_modeling.pdf",
+    "status": "ok",
+    "chunks": 105,
+    "author": "Dale H. Schunk",
+    "school": "观察学习",
+    "core_concepts": [
+      "观察学习",
+      "自我示范",
+      "掌握经验",
+      "自我效能",
+      "self-efficacy",
+      "performance accomplishments",
+      "coping model"
+    ],
+    "body_chars": 46282
+  },
+  {
+    "file": "schunk_1989_peer_models.pdf",
+    "status": "ok",
+    "chunks": 72,
+    "author": "Dale H. Schunk",
+    "school": "观察学习",
+    "core_concepts": [
+      "应对榜样",
+      "掌握榜样",
+      "同伴榜样",
+      "自我效能",
+      "self-efficacy",
+      "coping model",
+      "peer model"
+    ],
+    "body_chars": 29605
+  },
+  {
+    "file": "schunk_1995_social_origins_srl.pdf",
+    "status": "ok",
+    "chunks": 88,
+    "author": "Dale H. Schunk",
+    "school": "目标与自我调节",
+    "core_concepts": [
+      "自我调节",
+      "观察学习",
+      "应对榜样",
+      "同伴榜样",
+      "自我效能",
+      "self-efficacy",
+      "performance accomplishments",
+      "coping model",
+      "peer model"
+    ],
+    "body_chars": 39798
+  },
+  {
+    "file": "zakariya_2022_math_self_efficacy_review.pdf",
+    "status": "ok",
+    "chunks": 173,
+    "author": "Yusuf F. Zakariya",
+    "school": "干预与测量",
+    "core_concepts": [
+      "自我效能",
+      "掌握经验",
+      "替代经验",
+      "近端目标",
+      "mastery experience",
+      "vicarious experience",
+      "social persuasion",
+      "verbal persuasion",
+      "coping model",
+      "peer model"
+    ],
+    "body_chars": 75746
+  },
+  {
+    "file": "sample_self_efficacy.txt",
+    "status": "ok",
+    "chunks": 1,
+    "author": "Albert Bandura",
+    "school": "自我效能",
+    "core_concepts": [
+      "自我效能",
+      "效能预期",
+      "结果预期",
+      "掌握经验",
+      "亲身掌握",
+      "言语劝说"
+    ],
+    "body_chars": 264
+  },
+  {
+    "file": "schunk_attribution_feedback.md",
+    "status": "ok",
+    "chunks": 1,
+    "author": "Dale H. Schunk",
+    "school": "干预与测量",
+    "core_concepts": [
+      "归因反馈",
+      "努力归因",
+      "自我效能",
+      "近端目标"
+    ],
+    "body_chars": 256
+  },
+  {
+    "file": "usher_pajares_sources_review.md",
+    "status": "ok",
+    "chunks": 1,
+    "author": "Ellen L. Usher",
+    "school": "干预与测量",
+    "core_concepts": [
+      "掌握经验",
+      "替代经验",
+      "社会劝说",
+      "生理状态"
+    ],
+    "body_chars": 298
+  }
+]
