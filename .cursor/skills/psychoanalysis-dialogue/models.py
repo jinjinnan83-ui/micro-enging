@@ -19,11 +19,14 @@ class FreudReplyPlan(BaseModel):
     manifest_detail: str = Field(..., description="显意里被切开的具体细节")
     latent_structure: str = Field(..., description="被挡住、仍在运作的隐意结构")
     defense_or_resistance: str
+    compromise_or_repetition: str
+    transference_position: str
     psychodynamic_move: PsychodynamicMove
     concept: str = Field(..., description="本轮使用的知识库概念")
     school: str = "精神分析"
     source_author: str | None = None
     risk_flag: Literal["none", "self_harm", "violence", "immediate_danger"] = "none"
+    knowledge_use: str = Field(..., description="检索知识如何约束本轮分析")
     reply: str
 
 

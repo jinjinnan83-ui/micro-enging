@@ -1,7 +1,8 @@
 from fastapi.testclient import TestClient
 
-from src.api.main import app, get_app_settings, get_chain, get_store
+from src.api.main import app, get_app_settings, get_chain, get_dialogue_service, get_store
 from src.config import Settings
+from src.dialogue.models import DialogueResult
 from src.retrieval.hybrid import RetrievalHit
 
 
@@ -27,6 +28,16 @@ class FakeChain:
                 source="rerank",
             )
         ]
+
+
+class FakeDialogueService:
+    def respond(
+        self,
+        letter: str,
+        preferred_school=None,
+        include_trace=False,
+    ):
+        return DialogueResult(reply=f"动态回复：{letter}")
 
 
 def test_health_endpoint_reports_qdrant_and_collection() -> None:
@@ -59,3 +70,21 @@ def test_query_endpoint_returns_agent_friendly_payload() -> None:
     assert body["query"] == "什么是无意识？"
     assert body["results"][0]["metadata"]["school"] == "Freud"
     assert body["results"][0]["source"] == "rerank"
+
+
+def test_dialogue_endpoint_returns_generated_reply() -> None:
+    app.dependency_overrides[get_dialogue_service] = lambda: FakeDialogueService()
+    client = TestClient(app)
+
+    response = client.post(
+        "/dialogue",
+        json={"letter": "我总在关系里退开。", "include_trace": False},
+    )
+
+    app.dependency_overrides.clear()
+    assert response.status_code == 200
+    assert response.json() == {
+        "reply": "动态回复：我总在关系里退开。",
+        "interaction": None,
+        "trace": None,
+    }

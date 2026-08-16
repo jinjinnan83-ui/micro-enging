@@ -4,6 +4,8 @@ from typing import Any
 
 from pydantic import BaseModel, Field
 
+from src.dialogue.models import DialogueResult
+
 
 class QueryRequest(BaseModel):
     query: str = Field(..., description="精神分析问题或概念，例如：拉康的镜像阶段")
@@ -42,3 +44,13 @@ class HealthResponse(BaseModel):
     qdrant: str
     collection: str
     points: int
+
+
+class DialogueRequest(BaseModel):
+    letter: str = Field(..., min_length=1, max_length=30000, description="用户来信")
+    preferred_school: str | None = Field(None, description="可选的精神分析流派")
+    include_trace: bool = Field(False, description="返回基础/解释性检索词、两类命中文献和 token usage")
+
+
+class DialogueResponse(DialogueResult):
+    pass

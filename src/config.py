@@ -44,6 +44,14 @@ class Settings(BaseSettings):
     openai_base_url: str = ""
     openai_model: str = "gpt-4o-mini"
 
+    llm_provider: str = "deepseek"
+    llm_model: str = "deepseek-v4-flash"
+    llm_api_key: str = ""
+    llm_base_url: str = "https://api.deepseek.com"
+    llm_thinking_type: str = "disabled"
+    llm_timeout_seconds: float = 90.0
+    llm_max_retries: int = 2
+
     data_raw_dir: Path = PROJECT_ROOT / "data" / "raw"
     data_processed_dir: Path = PROJECT_ROOT / "data" / "processed"
 
