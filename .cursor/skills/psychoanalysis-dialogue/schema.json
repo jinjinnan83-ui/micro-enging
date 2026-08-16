@@ -9,8 +9,11 @@
     "manifest_detail",
     "latent_structure",
     "defense_or_resistance",
+    "compromise_or_repetition",
+    "transference_position",
     "psychodynamic_move",
     "concept",
+    "knowledge_use",
     "reply"
   ],
   "properties": {
@@ -29,6 +32,14 @@
     "defense_or_resistance": {
       "type": "string",
       "description": "压抑、否认、反向形成、移情位置等，用观察描述"
+    },
+    "compromise_or_repetition": {
+      "type": "string",
+      "description": "症状或关系重复同时满足的欲望、禁令、惩罚或控制"
+    },
+    "transference_position": {
+      "type": "string",
+      "description": "旧关系场景如何在当下重演，以及他人被放在什么位置"
     },
     "psychodynamic_move": {
       "type": "string",
@@ -51,6 +62,10 @@
       "type": "string",
       "enum": ["none", "self_harm", "violence", "immediate_danger"],
       "default": "none"
+    },
+    "knowledge_use": {
+      "type": "string",
+      "description": "检索命中的理论如何约束本轮分析，不粘贴知识库原文"
     },
     "reply": {
       "type": "string",

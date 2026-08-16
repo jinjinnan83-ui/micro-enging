@@ -8,6 +8,8 @@ from typing import Any
 from fastapi import Depends, FastAPI, HTTPException
 
 from src.api.schemas import (
+    DialogueRequest,
+    DialogueResponse,
     HealthResponse,
     IngestRequest,
     IngestResponse,
@@ -16,6 +18,7 @@ from src.api.schemas import (
     RetrievalItem,
 )
 from src.config import Settings, get_settings
+from src.dialogue.llm import LLMError
 
 
 @asynccontextmanager
@@ -46,6 +49,14 @@ def get_store():
     if not getattr(app.state, "store", None):
         app.state.store = QdrantStoreManager(get_app_settings())
     return app.state.store
+
+
+def get_dialogue_service():
+    from src.dialogue.service import DialogueService
+
+    if not getattr(app.state, "dialogue_service", None):
+        app.state.dialogue_service = DialogueService(get_app_settings())
+    return app.state.dialogue_service
 
 
 def get_app_settings() -> Settings:
@@ -87,6 +98,23 @@ def query_knowledge_base(
         query=payload.query,
         results=[RetrievalItem(**hit.as_dict()) for hit in hits],
     )
+
+
+@app.post("/dialogue", response_model=DialogueResponse)
+def psychodynamic_dialogue(
+    payload: DialogueRequest,
+    service=Depends(get_dialogue_service),
+) -> DialogueResponse:
+    """Generate a skill-grounded psychodynamic reply with optional trace data."""
+    try:
+        result = service.respond(
+            payload.letter,
+            preferred_school=payload.preferred_school,
+            include_trace=payload.include_trace,
+        )
+    except (LLMError, FileNotFoundError) as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    return DialogueResponse.model_validate(result.model_dump())
 
 
 @app.post("/ingest", response_model=IngestResponse)
