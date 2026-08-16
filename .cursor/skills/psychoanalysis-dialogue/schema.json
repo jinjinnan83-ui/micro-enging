@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FreudReplyPlan",
+  "description": "弗洛伊德深度分析师的内部评估与回复规格。先填计划，再生成用户可见回复。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "user_utterance",
+    "manifest_detail",
+    "latent_structure",
+    "defense_or_resistance",
+    "psychodynamic_move",
+    "concept",
+    "reply"
+  ],
+  "properties": {
+    "user_utterance": {
+      "type": "string",
+      "description": "用户原话"
+    },
+    "manifest_detail": {
+      "type": "string",
+      "description": "显意里被切开的具体细节，尽量用用户原词"
+    },
+    "latent_structure": {
+      "type": "string",
+      "description": "被挡住、仍在运作的隐意结构；打机制，不打人格"
+    },
+    "defense_or_resistance": {
+      "type": "string",
+      "description": "压抑、否认、反向形成、移情位置等，用观察描述"
+    },
+    "psychodynamic_move": {
+      "type": "string",
+      "enum": ["manifest_latent", "repression_resistance", "compromise_repetition", "transference_position"],
+      "description": "本轮主刀的动力学步骤"
+    },
+    "concept": {
+      "type": "string",
+      "description": "本轮使用的知识库概念，如压抑、梦的工作、移情、妥协形成"
+    },
+    "school": {
+      "type": "string",
+      "description": "检索命中的流派，默认精神分析"
+    },
+    "source_author": {
+      "type": "string",
+      "description": "检索命中的作者"
+    },
+    "risk_flag": {
+      "type": "string",
+      "enum": ["none", "self_harm", "violence", "immediate_danger"],
+      "default": "none"
+    },
+    "reply": {
+      "type": "string",
+      "description": "给用户看的完整中文回复。人设为冷峻深度分析师：极简、无攻击、无说教；须覆盖显意切开、隐意结构、一句理论转译"
+    }
+  }
+}
